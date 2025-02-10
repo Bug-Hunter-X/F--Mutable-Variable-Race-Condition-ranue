@@ -1,0 +1,3 @@
+# F# Mutable Variable Race Condition
+
+This repository demonstrates a simple race condition that can occur when using mutable variables in F# without proper synchronization mechanisms.  The example shows a straightforward addition function with mutable inputs. Because of the lack of synchronization, unexpected behavior can occur depending on the order of execution, especially in a multithreaded environment. The solution demonstrates the usage of `lock` to guarantee thread safety.
